@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Gymnastics Personal Training</title>
+  <!-- Bootstrap CSS CDN -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+  <style>
+    /* Custom Styles */
+    body {
+      transition: background-color 0.3s, color 0.3s;
+    }
+    .dark-mode {
+      background-color: #121212 !important;
+      color: #eee !important;
+    }
+    .dark-mode a {
+      color: #bb86fc !important;
+    }
+    header {
+      margin-bottom: 3rem;
+    }
+    .btn-toggle {
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      z-index: 1050;
+    }
+  </style>
+</head>
+<body class="bg-light text-dark">
+  <button class="btn btn-secondary btn-toggle">Toggle Dark Mode</button>
+
+  <div class="container py-5">
+    <header class="text-center">
+      <h1 class="display-4 mb-3">Gymnastics Training with [Your Name]</h1>
+      <p class="lead">Strength, Flexibility, and Confidence — Start Your Journey Today</p>
+    </header>
+
+    <section class="mb-5">
+      <h2>About Me</h2>
+      <p>
+        I'm a certified gymnastics coach focused on helping clients improve mobility, strength, and performance. Personalized training plans for all skill levels.
+      </p>
+    </section>
+
+    <section class="mb-5">
+      <h2>Services</h2>
+      <ul>
+        <li>Personal one-on-one training sessions</li>
+        <li>Flexibility and mobility coaching</li>
+        <li>Strength conditioning and injury prevention</li>
+        <li>Online training programs and video reviews</li>
+      </ul>
+    </section>
+
+    <section class="mb-5">
+      <h2>Booking & Contact</h2>
+      <p>Email me to book your session:</p>
+      <p><a href="mailto:youremail@example.com">youremail@example.com</a></p>
+      <p>Or call/text: <strong>(123) 456-7890</strong></p>
+    </section>
+  </div>
+
+  <!-- Bootstrap JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    // Dark mode toggle script
+    const btnToggle = document.querySelector('.btn-toggle');
+    btnToggle.addEventListener('click', () => {
+      document.body.classList.toggle('dark-mode');
+    });
+  </script>
+</body>
+</html>
